@@ -19,7 +19,6 @@ class Language(models.Model):
 class Author(models.Model):
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
-    date_birth = models.DateField(null=True, blank=True)
     date_joined = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 
@@ -41,7 +40,6 @@ class Partner(models.Model):
     last_name = models.CharField(max_length=60)
     dni = models.CharField(max_length=8)
     address = models.CharField(max_length=50)
-    expire_date = models.DateField(null=True, blank=True)
     date_joined = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 
